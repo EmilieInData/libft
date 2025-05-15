@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: esellier <esellier@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: esellier <esellier@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/08 16:53:25 by esellier          #+#    #+#             */
-/*   Updated: 2024/01/17 13:31:49 by esellier         ###   ########.fr       */
+/*   Created: 2024/01/10 18:39:13 by esellier          #+#    #+#             */
+/*   Updated: 2024/01/16 15:28:50 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
-//#include <string.h>
-#include "libft.h"
+//#include <ctype.h>
 
-void	*ft_memset(void *s, int c, size_t n)
+int	ft_toupper(int c)
 {
-	size_t			i;
-	unsigned char	*str;
-
-	str = (unsigned char *)s;
-	i = 0;
-	while (i != n)
-	{
-		str[i] = c;
-		i++;
-	}
-	return (s);
+	if ((c >= 97) && (c <= 122))
+		return (c - 32);
+	else
+		return (c);
 }
+
+/*int	main ()
+{
+	int	t;
+	int	c = 'e';
+	t = ft_toupper(c);
+	printf("%c\n", t);
+
+	t = toupper (c);
+	printf("%c", t);
+}*/

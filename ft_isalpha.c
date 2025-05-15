@@ -6,11 +6,11 @@
 /*   By: esellier <esellier@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 17:40:50 by esellier          #+#    #+#             */
-/*   Updated: 2023/12/08 16:30:57 by esellier         ###   ########.fr       */
+/*   Updated: 2024/01/17 14:05:40 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);

@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: esellier <esellier@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: esellier <esellier@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/06 18:08:12 by esellier          #+#    #+#             */
-/*   Updated: 2024/01/17 14:07:58 by esellier         ###   ########.fr       */
+/*   Created: 2024/01/22 11:41:39 by esellier          #+#    #+#             */
+/*   Updated: 2024/02/01 15:41:24 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int c)
+#include "libft.h"
+
+void	ft_putchar_fd(char c, int fd)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	return (0);
+	write(fd, &c, 1);
 }
+
+/*int main ()
+{
+	ft_putchar_fd('E', 1);
+	return(0);
+}*/

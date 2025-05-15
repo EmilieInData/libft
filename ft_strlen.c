@@ -6,13 +6,15 @@
 /*   By: esellier <esellier@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 17:05:31 by esellier          #+#    #+#             */
-/*   Updated: 2023/12/08 16:14:09 by esellier         ###   ########.fr       */
+/*   Updated: 2024/01/17 13:24:31 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
-	int	len;
+	size_t	len;
 
 	len = 0;
 	while (str[len] != '\0')

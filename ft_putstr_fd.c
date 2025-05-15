@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: esellier <esellier@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: esellier <esellier@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/06 18:08:12 by esellier          #+#    #+#             */
-/*   Updated: 2024/01/17 14:07:58 by esellier         ###   ########.fr       */
+/*   Created: 2024/01/21 22:24:36 by esellier          #+#    #+#             */
+/*   Updated: 2024/02/01 15:40:53 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int c)
+#include "libft.h"
+
+void	ft_putstr_fd(char *s, int fd)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	return (0);
+	if (s)
+		write(fd, s, ft_strlen(s));
 }
+/*int main()
+{
+	ft_putstr_fd("", 0);
+	return(0);
+}*/

@@ -6,26 +6,41 @@
 /*   By: esellier <esellier@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 21:27:30 by esellier          #+#    #+#             */
-/*   Updated: 2023/12/08 22:51:29 by esellier         ###   ########.fr       */
+/*   Updated: 2024/01/17 15:54:39 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+//#include <string.h>
+//#include <stdio.h>
+#include "libft.h"
 
-void	*memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	int				i;
+	size_t			i;
 	unsigned char	*s;
 	unsigned char	*d;
 
-	src = (unsigned char *)s;
-	dest = (unsigned char *)d;
+	s = (unsigned char *)src;
+	d = (unsigned char *)dest;
 	i = 0;
-	while (i < n - 1)
+	if (!src && !dest)
+		return (dest);
+	while (i < n)
 	{
 		d[i] = s[i];
 		i++;
 	}
-	s[i] = '\0';
 	return (dest);
 }
+
+/*int main ()
+{
+	unsigned char	dest[30] = "42!"; 
+	unsigned char   dest2[30] = "42!";
+	unsigned char	src[] = "Hello";
+	unsigned char   src2[] = "Hello";
+
+	printf("%s\n", ft_memcpy(dest, src, 2));
+	printf("%s", memcpy(dest2, src2, 2));
+	return (0);
+}*/

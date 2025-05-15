@@ -6,11 +6,11 @@
 /*   By: esellier <esellier@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 18:18:53 by esellier          #+#    #+#             */
-/*   Updated: 2023/12/08 16:31:02 by esellier         ###   ########.fr       */
+/*   Updated: 2024/01/17 15:17:30 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(char c)
+int	ft_isalnum(int c)
 {
 	if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z')
 		|| (c >= 'A' && c <= 'Z'))

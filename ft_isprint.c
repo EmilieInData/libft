@@ -6,13 +6,13 @@
 /*   By: esellier <esellier@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 16:40:54 by esellier          #+#    #+#             */
-/*   Updated: 2023/12/08 18:28:55 by esellier         ###   ########.fr       */
+/*   Updated: 2024/01/17 13:59:39 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char c)
+int	ft_isprint(int c)
 {
-	if (c >= 32 && c <= 127)
+	if (c >= 32 && c < 127)
 		return (1);
 	return (0);
 }
